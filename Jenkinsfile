@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         VIRTUAL_ENV = 'venv'
+        PATH = 'C:\\Users\\royba\\AppData\\Local\\Programs\\Python\\Python311\\python.exe'
     }
 
     stages {
