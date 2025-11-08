@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     if (!fileExists("${env.WORKSPACE}\\${VIRTUAL_ENV}")) {
-                        bat "python -m venv ${VIRTUAL_ENV}"
+                        bat "\"C:\\Users\\royba\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\" -m venv ${VIRTUAL_ENV}"
                     }
                     bat "call ${VIRTUAL_ENV}\\Scripts\\activate && pip install -r requirements.txt"
                 }
