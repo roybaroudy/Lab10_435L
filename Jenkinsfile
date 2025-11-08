@@ -21,7 +21,7 @@ pipeline {
         stage('Lint') {
             steps {
                 script {
-                    bat "call ${VIRTUAL_ENV}\\Scripts\\activate && flake8 app/app.py"
+                    bat "call ${VIRTUAL_ENV}\\Scripts\\activate && flake8 myapp/app.py"
                 }
             }
         }
