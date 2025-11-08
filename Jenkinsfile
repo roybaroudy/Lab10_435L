@@ -54,7 +54,9 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application...'
+                script {
+                    bat "call ${VIRTUAL_ENV}\\Scripts\\activate && python deploy.py"
+                }
             }
         }
     }
